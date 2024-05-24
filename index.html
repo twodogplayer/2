@@ -20,6 +20,15 @@
             <button><a href="#" class="se">搜索</a></button>
         </div>
     </div>
+    <script>
+    var text = document.querySelector(".text")
+    var sear = document.querySelector(".se")
+    function search() {
+        var textcontent = text.value;
+        location.href = "https://www.baidu.com/s?wd="+textcontent;
+    }
+    sear.addventListener("click",search);
+    </script>
 </body>
 
 </html>
